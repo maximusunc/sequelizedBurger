@@ -1,0 +1,81 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/burgermenu.jpg"), url("../images/burgerbar.jpg");
+	background-size: 70% 100%, cover;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center center, center center;
+	background-attachment: fixed;
+
+}
+h1 {
+	width: 40%;
+	margin: auto;
+	font-size: 70px;
+	text-align: center;
+	clear: both;
+	font-family: 'Caveat', cursive;
+	color: #ffff;
+}
+form {
+	text-align: center;
+	clear: both;
+	margin: 40px 0px;
+}
+input, button {
+	background-color: #ffff;
+}
+form button {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 5px;
+}
+p button {
+	float: right;
+}
+input {
+	width: 15%;
+}
+img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.clearfix {
+	margin: auto;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.undevoured {
+	width: 50%;
+}
+.devoured {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+.devoured p {
+	background-color: grey;
+	text-align: left;
+	padding: 10px 10px;
+}
+.undevoured p {
+	display: inline-block;
+	width: 65%;
+	text-align: center;
+	background-color: #ffff;
+	padding: 5px 0px 15px 0px;
+}
+.undevoured .devour {
+	margin: 5px 10px;
+	width: 25%;
+	background-color: #ffff;
+}
+ 

@@ -1,0 +1,19 @@
+<div class="devoured">
+{{#each burger}}
+	{{#if devoured}}
+		<p>{{this.id}}. {{this.burger_name}}<button data-id={{id}} class="delete">X</button><button data-id={{id}} class="makeAnother">Make Another!</button></p>
+	{{/if}}
+{{/each}}
+</div>
+<div class="undevoured">
+	{{#each burger}}
+		{{#unless devoured}}
+			<p>{{this.id}}. {{this.burger_name}}</p>
+			<form>
+				<input type="text" name={{id}} placeholder="Customer?"></input>
+				<button type="submit" data-id={{id}} class="devour">Devour it!</button>
+			</form>
+			
+		{{/unless}}
+	{{/each}}
+</div>
